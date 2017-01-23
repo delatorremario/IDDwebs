@@ -1,0 +1,56 @@
+/*!
+ * Start Bootstrap - Portfolio Item (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: Myriad-Pro-Regular;
+}
+
+.portfolio-item {
+    margin-bottom: 25px; 
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.video-content{
+    margin-top:-19px;
+}
+
+.txt-header{
+    color:#10A5CF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.txt-body{
+    color:#215789;
+    font-size: 12px;
+}
+
+.navbar {
+    background-color:#215789;
+    border: 0;
+}
+.navbar-brand{
+    height: 67px;
+}
+
+.img-principal{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.img-col{
+    padding-right: 5px; 
+    padding-left: 5px;
+}
+
+.img-logo{
+    max-width:170px; 
+    margin-top: -7px;
+}
