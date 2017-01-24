@@ -1,14 +1,18 @@
 app.controller('imagesCtrl',function($scope,$http){
     
     //text load
+    $scope.url='';
+    
     $http.get('js/text.json').success(function(data) {
         $scope.text = data;
+        //$scope.url="https://www.youtube.com/embed/znEXgFuplrc?rel=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1";
+
     });
 
 
 
     $scope.principal_url_image='';
-    $scope.images=[{url:'img/image0.jpg'},{url:'img/image1.jpeg'},{url:'img/image2.jpeg'},{url:'img/image3.jpeg'},{url:'img/image4.jpeg'}];
+    $scope.images=[{url:'img/image0.jpg'},{url:'img/image1.jpg'},{url:'img/image2.jpg'},{url:'img/image3.jpg'},{url:'img/image4.jpg'}];
     $scope.principal_url_image=$scope.images[0].url;
 
     $scope.images_footers=_.rest($scope.images);

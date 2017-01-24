@@ -8,7 +8,7 @@ app.controller('imagesCtrl',function($scope,$http){
 
 
     $scope.principal_url_image='';
-    $scope.images=[{url:'img/image0.jpg'},{url:'img/image1.jpeg'},{url:'img/image2.jpeg'},{url:'img/image3.jpeg'},{url:'img/image4.jpeg'}];
+    $scope.images=[{url:'img/image0.jpg'},{url:'img/image1.jpg'},{url:'img/image2.jpg'},{url:'img/image3.jpg'},{url:'img/image4.jpg'}];
     $scope.principal_url_image=$scope.images[0].url;
 
     $scope.images_footers=_.rest($scope.images);
