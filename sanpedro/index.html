@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>IGLESIA SAN PEDRO DE DURAZNO</title>
+    <title>IDD</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
  
@@ -55,36 +55,30 @@
         </nav>
 
         <!-- Page Content -->
-        <!-- Video Content -->
-        <div class="video-content embed-responsive embed-responsive-16by9" >
-            <iframe src="https://www.youtube.com/embed/L5_OXtqn3mg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1" frameborder="0" allowfullscreen>
-            </iframe>
-        </div>
         <div class="container">
+            <!-- Video Content -->
+            <div class="row">
+                <div class="img-responsive video-content embed-responsive embed-responsive-16by9" >
+                    <iframe src="https://www.youtube.com/embed/L5_OXtqn3mg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        
         
 
-           <!-- Portfolio Item Heading -->
+            <!-- Portfolio Item Heading -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="txt-header">IGLESIA SAN PEDRO DE DURAZNO</h5>
-                    <p class="txt-body">
-                        Obra arquitectónica de relevancia internacional construida a partir de 1967, cuando un incendio destruyó el interior del templo original, que databa de 1918.
-                    </p>
-                    <p class="txt-body">
-                        Su responsable, el genial Ingeniero Eladio Dieste, diseñó su interior como una moderna estructura basada en el ladrillo,  que brinda una sensación de austeridad y amplitud espacial que predispone al visitante a la admiración y instropección.
-                    </p>
-                    <p class="txt-body">
-                        Su fachada e interior pertenecientes a dos épocas y a dos lenguajes arquitectónicos tan discímiles, es sin duda, un atractivo especial. 
-                    </p>
-                    <p class="txt-body">
-                        Declarada Monumento Histórico Nacional, ocupa un lugar de destaque dentro de la excepcional obra del Ing. Dieste identificado como… “el Sr. de los ladrillos”.
-                    </p>
+                    <h5 class="txt-header">{{text.title}}</h5>
+                    <p class="txt-body" ng-repeat="txt in text.description">
+                        {{txt}} 
+                   </p>
                 </div>
             </div>
             <!-- /.row -->
-        </div>
-            <img class="img-responsive img-principal" ng-src="{{principal_url_image}}" alt="">
-        <div class="container">    
+            <div class="row">
+                    <img class="img-responsive" ng-src="{{principal_url_image}}" alt="">
+            </div>
             <!-- Related Projects Row -->
             <div class="row">
                 <div class="col-xs-3 img-col" ng-repeat="image in images_footers" ng-click="selectImg(image.url);" >

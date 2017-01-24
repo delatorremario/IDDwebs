@@ -10,7 +10,7 @@ body {
 }
 
 .portfolio-item {
-    margin-bottom: 25px; 
+    margin-top: 20px; 
 }
 
 footer {
@@ -42,7 +42,7 @@ footer {
 
 .img-principal{
     width: 100%;
-    padding-bottom: 20px;
+    padding:0;
 }
 
 .img-col{
@@ -53,4 +53,10 @@ footer {
 .img-logo{
     max-width:170px; 
     margin-top: -7px;
+}
+
+@media (min-width: 460px) {
+  .container {
+    width: 460px;
+  }
 }
